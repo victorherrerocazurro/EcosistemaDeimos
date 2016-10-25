@@ -7,6 +7,28 @@
 	<properties>
 		<project.scm.id>my-scm-server</project.scm.id>
 	</properties>
+	<repositories>
+		<repository>
+			<id>archiva.internal</id>
+			<url>http://localhost:8085/repository/internal/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>archiva.snapshots</id>
+			<url>http://localhost:8085/repository/snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<scm>
 		<developerConnection>scm:git:https://github.com/victorherrerocazurro/EcosistemaDeimos</developerConnection>
 		<connection>scm:git:https://github.com/victorherrerocazurro/EcosistemaDeimos</connection>
