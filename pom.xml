@@ -3,10 +3,26 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.deimos</groupId>
 	<artifactId>06_ReleasePlugin</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<properties>
 		<project.scm.id>my-scm-server</project.scm.id>
 	</properties>
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>archiva.internal</id>
+			<name>Releases</name>
+			<url>http://localhost:8085/repository/internal</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>archiva.snapshots</id>
+			<name>Snapshots</name>
+			<url>http://localhost:8085/repository/snapshots</url>
+			<layout>default</layout>
+		</snapshotRepository>
+	</distributionManagement>
 	<repositories>
 		<repository>
 			<id>archiva.internal</id>
