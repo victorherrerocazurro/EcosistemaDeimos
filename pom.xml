@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.deimos</groupId>
 	<artifactId>06_ReleasePlugin</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<properties>
 		<project.scm.id>my-scm-server</project.scm.id>
 	</properties>
@@ -33,7 +32,7 @@
 		<developerConnection>scm:git:https://github.com/victorherrerocazurro/EcosistemaDeimos</developerConnection>
 		<connection>scm:git:https://github.com/victorherrerocazurro/EcosistemaDeimos</connection>
 		<url>scm:git:https://github.com/victorherrerocazurro/EcosistemaDeimos</url>
-		<tag>HEAD</tag>
+		<tag>06_ReleasePlugin-0.0.2</tag>
 	</scm>
 	<build>
 		<plugins>
